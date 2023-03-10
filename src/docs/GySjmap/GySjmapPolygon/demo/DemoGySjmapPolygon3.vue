@@ -1,0 +1,24 @@
+<template>
+  <SjmapCon id="map3">
+    <GySjmapPolygon
+      :positionList="lineList"
+      :lineWidth="10"
+      text="测试点1"
+      :fillOpacity="0.5"
+      textType="Polygon"
+    />
+  </SjmapCon>
+</template>
+
+<script setup lang="ts">
+import SjmapCon from '@/components/SjmapCon.vue'
+import {ref} from 'vue'
+import type {Ref} from 'vue'
+const lineList:Ref<number[][]> = ref([
+  [116.400476,39.899306],
+  [116.411226,39.899306],
+  [116.411226,39.893075],
+  [116.400476,39.893075],
+  [116.400476,39.899306],
+])
+</script>

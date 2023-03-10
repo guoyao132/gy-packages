@@ -1,0 +1,5909 @@
+{
+  "version": 8,
+  "sprite": "aegis://sprites/aegis/Streets",
+  "glyphs": "aegis://fonts/aegis/{fontstack}/{range}.pbf",
+  "sources": {
+    "epgis": {
+      "type": "vector",
+      "url": "aegis://aegis.Streets.zvLK"
+    }
+  },
+  "layers": [
+    {
+      "type": "background",
+      "id": "background",
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "background-color": "#f7f7f7"
+      }
+    },
+    {
+      "id": "Sea/1",
+      "type": "fill",
+      "source": "epgis",
+      "source-layer": "Sea",
+      "maxzoom": 9,
+      "layout": {},
+      "paint": {
+        "fill-color": "#b2cefe"
+      }
+    },
+    {
+      "id": "World/1",
+      "type": "fill",
+      "source": "epgis",
+      "source-layer": "World",
+      "maxzoom": 7,
+      "layout": {},
+      "paint": {
+        "fill-color": "#f7f7f7"
+      }
+    },
+    {
+      "id": "Province",
+      "type": "fill",
+      "source": "epgis",
+      "source-layer": "Province",
+      "minzoom": 7,
+      "layout": {},
+      "paint": {
+        "fill-color": "#f7f7f7"
+      }
+    },
+    {
+      "id": "SouthIsland_S/1",
+      "type": "fill",
+      "source": "epgis",
+      "source-layer": "SouthIsland_S",
+      "maxzoom": 7,
+      "layout": {},
+      "paint": {
+        "fill-color": "#f7f7f7"
+      }
+    },
+    {
+      "id": "AOI/Traffic/1",
+      "type": "fill",
+      "source": "epgis",
+      "source-layer": "AOI",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "minzoom": 11,
+      "layout": {},
+      "paint": {
+        "fill-color": "#CDEAE9"
+      }
+    },
+    {
+      "id": "AOI/Building/1",
+      "type": "fill",
+      "source": "epgis",
+      "source-layer": "AOI",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 11,
+      "layout": {},
+      "paint": {
+        "fill-color": "#EEEEEE"
+      }
+    },
+    {
+      "id": "AOI/School/1",
+      "type": "fill",
+      "source": "epgis",
+      "source-layer": "AOI",
+      "filter": [
+        "==",
+        "_symbol",
+        2
+      ],
+      "minzoom": 11,
+      "layout": {},
+      "paint": {
+        "fill-color": "#D2E8F5"
+      }
+    },
+    {
+      "id": "AOI/Museum/1",
+      "type": "fill",
+      "source": "epgis",
+      "source-layer": "AOI",
+      "filter": [
+        "==",
+        "_symbol",
+        3
+      ],
+      "minzoom": 11,
+      "layout": {},
+      "paint": {
+        "fill-color": "#F4E0D7"
+      }
+    },
+    {
+      "id": "AOI/Hospital/1",
+      "type": "fill",
+      "source": "epgis",
+      "source-layer": "AOI",
+      "filter": [
+        "==",
+        "_symbol",
+        4
+      ],
+      "minzoom": 11,
+      "layout": {},
+      "paint": {
+        "fill-color": "#F8DADA"
+      }
+    },
+    {
+      "id": "AOI/Shopping/1",
+      "type": "fill",
+      "source": "epgis",
+      "source-layer": "AOI",
+      "filter": [
+        "==",
+        "_symbol",
+        5
+      ],
+      "minzoom": 11,
+      "layout": {},
+      "paint": {
+        "fill-color": "#DDD3F1"
+      }
+    },
+    {
+      "id": "AOI/Park/1",
+      "type": "fill",
+      "source": "epgis",
+      "source-layer": "AOI",
+      "filter": [
+        "==",
+        "_symbol",
+        6
+      ],
+      "minzoom": 11,
+      "layout": {},
+      "paint": {
+        "fill-color": "#C6E2B2"
+      }
+    },
+    {
+      "id": "AOI/Industry/1",
+      "type": "fill",
+      "source": "epgis",
+      "source-layer": "AOI",
+      "filter": [
+        "==",
+        "_symbol",
+        7
+      ],
+      "minzoom": 11,
+      "layout": {},
+      "paint": {
+        "fill-color": "#FDF5E6"
+      }
+    },
+    {
+      "id": "Green",
+      "type": "fill",
+      "source": "epgis",
+      "source-layer": "Green",
+      "minzoom": 7.5,
+      "layout": {},
+      "paint": {
+        "fill-color": "#C6E2B2"
+      }
+    },
+    {
+      "id": "WaterLine",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "WaterLine",
+      "minzoom": 10,
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#b2cefe",
+        "line-width": 1.2
+      }
+    },
+    {
+      "id": "Water",
+      "type": "fill",
+      "source": "epgis",
+      "source-layer": "Water",
+      "layout": {},
+      "paint": {
+        "fill-color": "#b2cefe"
+      }
+    },
+    {
+      "id": "Railway/1",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "Railway",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "minzoom": 10,
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#828282",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          7,
+          2,
+          8,
+          3
+        ]
+      }
+    },
+    {
+      "id": "Railway/0",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "Railway",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "minzoom": 10,
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#FFFFFF",
+        "line-dasharray": [
+          6,
+          6
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          7,
+          1,
+          8,
+          2
+        ]
+      }
+    },
+    {
+      "id": "Railway/HighSpeed/1",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "Railway",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 10,
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#FF7F7F",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          7,
+          2,
+          8,
+          3
+        ]
+      }
+    },
+    {
+      "id": "Railway/HighSpeed/0",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "Railway",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 10,
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#FFFFFF",
+        "line-dasharray": [
+          6,
+          6
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          7,
+          1,
+          8,
+          2
+        ]
+      }
+    },
+    {
+      "id": "R_FerryLine",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_FerryLine",
+      "minzoom": 12.5,
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#6699CD",
+        "line-dasharray": [
+          2,
+          2
+        ],
+        "line-width": 1.2
+      }
+    },
+    {
+      "id": "R_Pathway/Construction/1",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_Pathway",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "minzoom": 15,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#a8acb3",
+        "line-dasharray": [
+          0.5,
+          1
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          15,
+          3,
+          16,
+          4,
+          17,
+          7,
+          18,
+          12,
+          19,
+          16
+        ]
+      }
+    },
+    {
+      "id": "R_Pathway/Construction/0",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_Pathway",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "minzoom": 15,
+      "layout": {
+        "visibility": "visible",
+        "line-cap": "square",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#e3e3e3",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          15,
+          2,
+          16,
+          2,
+          17,
+          5,
+          18,
+          10,
+          19,
+          14
+        ]
+      }
+    },
+    {
+      "id": "R_Pathway/Tunel/1",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_Pathway",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 15,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#d7d7d7",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          15,
+          3,
+          16,
+          4,
+          17,
+          7,
+          18,
+          12,
+          19,
+          16
+        ]
+      }
+    },
+    {
+      "id": "R_Pathway/Tunel/0",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_Pathway",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 15,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#f0f0f0",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          15,
+          2,
+          16,
+          2,
+          17,
+          5,
+          18,
+          10,
+          19,
+          14
+        ]
+      }
+    },
+    {
+      "id": "R_Pathway/Road/1",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_Pathway",
+      "filter": [
+        "==",
+        "_symbol",
+        2
+      ],
+      "minzoom": 15,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#d7d7d7",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          15,
+          3,
+          16,
+          4,
+          17,
+          7,
+          18,
+          12,
+          19,
+          16
+        ]
+      }
+    },
+    {
+      "id": "R_Pathway/Road/0",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_Pathway",
+      "filter": [
+        "==",
+        "_symbol",
+        2
+      ],
+      "minzoom": 15,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#ffffff",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          15,
+          2,
+          16,
+          2,
+          17,
+          5,
+          18,
+          10,
+          19,
+          14
+        ]
+      }
+    },
+    {
+      "id": "R_VillageRoad/Construction/1",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_VillageRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "minzoom": 14,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#a8acb3",
+        "line-dasharray": [
+          0.5,
+          1
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          15,
+          4,
+          16,
+          6,
+          17,
+          9,
+          18,
+          14,
+          19,
+          18
+        ]
+      }
+    },
+    {
+      "id": "R_VillageRoad/Construction/0",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_VillageRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "minzoom": 14,
+      "layout": {
+        "visibility": "visible",
+        "line-cap": "square",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#e3e3e3",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          15,
+          2,
+          16,
+          4,
+          17,
+          7,
+          18,
+          12,
+          19,
+          16
+        ]
+      }
+    },
+    {
+      "id": "R_VillageRoad/Tunel/1",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_VillageRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 14,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#d7d7d7",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          15,
+          4,
+          16,
+          6,
+          17,
+          9,
+          18,
+          14,
+          19,
+          18
+        ]
+      }
+    },
+    {
+      "id": "R_VillageRoad/Tunel/0",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_VillageRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 14,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#f0f0f0",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          15,
+          2,
+          16,
+          4,
+          17,
+          7,
+          18,
+          12,
+          19,
+          16
+        ]
+      }
+    },
+    {
+      "id": "R_VillageRoad/Road/1",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_VillageRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        2
+      ],
+      "minzoom": 14,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#d7d7d7",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          15,
+          4,
+          16,
+          6,
+          17,
+          9,
+          18,
+          14,
+          19,
+          18
+        ]
+      }
+    },
+    {
+      "id": "R_VillageRoad/Road/0",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_VillageRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        2
+      ],
+      "minzoom": 14,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#ffffff",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          15,
+          2,
+          16,
+          4,
+          17,
+          7,
+          18,
+          12,
+          19,
+          16
+        ]
+      }
+    },
+    {
+      "id": "R_OrdinaryRoad/Construction/1",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_OrdinaryRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "minzoom": 14.5,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#a8acb3",
+        "line-dasharray": [
+          0.5,
+          1
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          14,
+          3,
+          15,
+          4,
+          16,
+          6,
+          17,
+          13,
+          18,
+          22,
+          19,
+          38
+        ]
+      }
+    },
+    {
+      "id": "R_OrdinaryRoad/Construction/0",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_OrdinaryRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "minzoom": 14.5,
+      "layout": {
+        "visibility": "visible",
+        "line-cap": "square",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#e3e3e3",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          14,
+          2,
+          15,
+          3,
+          16,
+          4,
+          17,
+          10,
+          18,
+          20,
+          19,
+          36
+        ]
+      }
+    },
+    {
+      "id": "R_OrdinaryRoad/Tunel/1",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_OrdinaryRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 14.5,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#d7d7d7",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          14,
+          3,
+          15,
+          4,
+          16,
+          6,
+          17,
+          13,
+          18,
+          22,
+          19,
+          38
+        ]
+      }
+    },
+    {
+      "id": "R_OrdinaryRoad/Tunel/0",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_OrdinaryRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 14.5,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#f0f0f0",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          14,
+          2,
+          15,
+          3,
+          16,
+          4,
+          17,
+          10,
+          18,
+          20,
+          19,
+          36
+        ]
+      }
+    },
+    {
+      "id": "R_OrdinaryRoad/Road/1",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_OrdinaryRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        2
+      ],
+      "minzoom": 14.5,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#d7d7d7",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          14,
+          3,
+          15,
+          4,
+          16,
+          6,
+          17,
+          13,
+          18,
+          22,
+          19,
+          38
+        ]
+      }
+    },
+    {
+      "id": "R_OrdinaryRoad/Road/0",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_OrdinaryRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        2
+      ],
+      "minzoom": 14.5,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#ffffff",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          14,
+          2,
+          15,
+          3,
+          16,
+          4,
+          17,
+          10,
+          18,
+          20,
+          19,
+          36
+        ]
+      }
+    },
+    {
+      "id": "R_SecondaryRoad/Construction/1",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_SecondaryRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "minzoom": 13,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#a8acb3",
+        "line-dasharray": [
+          0.5,
+          1
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          12,
+          2.5,
+          15,
+          4,
+          16,
+          8,
+          17,
+          14,
+          18,
+          24,
+          19,
+          38
+        ]
+      }
+    },
+    {
+      "id": "R_SecondaryRoad/Construction/0",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_SecondaryRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "minzoom": 13,
+      "layout": {
+        "visibility": "visible",
+        "line-cap": "square",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#e3e3e3",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          12,
+          1.5,
+          15,
+          3,
+          16,
+          6,
+          17,
+          12,
+          18,
+          22,
+          19,
+          36
+        ]
+      }
+    },
+    {
+      "id": "R_SecondaryRoad/Tunel/1",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_SecondaryRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 13,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#d7d7d7",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          12,
+          2.5,
+          15,
+          4,
+          16,
+          8,
+          17,
+          14,
+          18,
+          24,
+          19,
+          38
+        ]
+      }
+    },
+    {
+      "id": "R_SecondaryRoad/Tunel/0",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_SecondaryRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 13,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#f0f0f0",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          12,
+          1.5,
+          15,
+          3,
+          16,
+          6,
+          17,
+          12,
+          18,
+          22,
+          19,
+          36
+        ]
+      }
+    },
+    {
+      "id": "R_SecondaryRoad/Tunel_1/1",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_SecondaryRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 12.7,
+      "maxzoom": 13,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#d7d7d7",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          12,
+          2.5,
+          15,
+          4,
+          16,
+          8,
+          17,
+          14,
+          18,
+          24,
+          19,
+          38
+        ]
+      }
+    },
+    {
+      "id": "R_SecondaryRoad/Tunel_1/0",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_SecondaryRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 12.7,
+      "maxzoom": 13,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#ffffff",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          12,
+          1.5,
+          15,
+          3,
+          16,
+          6,
+          17,
+          12,
+          18,
+          22,
+          19,
+          36
+        ]
+      }
+    },
+    {
+      "id": "R_SecondaryRoad/Road/1",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_SecondaryRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        2
+      ],
+      "minzoom": 12.7,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#d7d7d7",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          12,
+          2.5,
+          15,
+          4,
+          16,
+          8,
+          17,
+          14,
+          18,
+          24,
+          19,
+          38
+        ]
+      }
+    },
+    {
+      "id": "R_SecondaryRoad/Road/0",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_SecondaryRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        2
+      ],
+      "minzoom": 12.7,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#ffffff",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          12,
+          1.5,
+          15,
+          3,
+          16,
+          6,
+          17,
+          12,
+          18,
+          22,
+          19,
+          36
+        ]
+      }
+    },
+    {
+      "id": "R_TownshipRoad/Construction/1",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_TownshipRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "minzoom": 13,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#a8acb3",
+        "line-dasharray": [
+          0.5,
+          1
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          13,
+          4,
+          14,
+          5,
+          15,
+          6,
+          16,
+          9,
+          17,
+          13,
+          18,
+          22,
+          19,
+          38
+        ]
+      }
+    },
+    {
+      "id": "R_TownshipRoad/Construction/0",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_TownshipRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "minzoom": 13,
+      "layout": {
+        "visibility": "visible",
+        "line-cap": "square",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#e3e3e3",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          13,
+          2,
+          14,
+          3,
+          15,
+          4,
+          16,
+          7,
+          17,
+          11,
+          18,
+          20,
+          19,
+          36
+        ]
+      }
+    },
+    {
+      "id": "R_TownshipRoad/Tunel/1",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_TownshipRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 13,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#d7d7d7",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          13,
+          4,
+          14,
+          5,
+          15,
+          6,
+          16,
+          9,
+          17,
+          13,
+          18,
+          22,
+          19,
+          38
+        ]
+      }
+    },
+    {
+      "id": "R_TownshipRoad/Tunel/0",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_TownshipRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 13,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#f0f0f0",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          13,
+          2,
+          14,
+          3,
+          15,
+          4,
+          16,
+          7,
+          17,
+          11,
+          18,
+          20,
+          19,
+          36
+        ]
+      }
+    },
+    {
+      "id": "R_TownshipRoad/Tunel_1/1",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_TownshipRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 10,
+      "maxzoom": 13,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#d7d7d7",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          13,
+          4,
+          14,
+          5,
+          15,
+          6,
+          16,
+          9,
+          17,
+          13,
+          18,
+          22,
+          19,
+          38
+        ]
+      }
+    },
+    {
+      "id": "R_TownshipRoad/Tunel_1/0",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_TownshipRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 10,
+      "maxzoom": 13,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#ffffff",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          13,
+          2,
+          14,
+          3,
+          15,
+          4,
+          16,
+          7,
+          17,
+          11,
+          18,
+          20,
+          19,
+          36
+        ]
+      }
+    },
+    {
+      "id": "R_TownshipRoad/Road/1",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_TownshipRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        2
+      ],
+      "minzoom": 10,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#d7d7d7",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          13,
+          4,
+          14,
+          5,
+          15,
+          6,
+          16,
+          9,
+          17,
+          13,
+          18,
+          22,
+          19,
+          38
+        ]
+      }
+    },
+    {
+      "id": "R_TownshipRoad/Road/0",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_TownshipRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        2
+      ],
+      "minzoom": 10,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#ffffff",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          13,
+          2,
+          14,
+          3,
+          15,
+          4,
+          16,
+          7,
+          17,
+          11,
+          18,
+          20,
+          19,
+          36
+        ]
+      }
+    },
+    {
+      "id": "R_CountyRoad/Construction/1",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_CountyRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "minzoom": 13,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#a8acb3",
+        "line-dasharray": [
+          0.5,
+          1
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          10,
+          3,
+          12,
+          5,
+          15,
+          7,
+          16,
+          10,
+          17,
+          14,
+          18,
+          24,
+          19,
+          38
+        ]
+      }
+    },
+    {
+      "id": "R_CountyRoad/Construction/0",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_CountyRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "minzoom": 13,
+      "layout": {
+        "visibility": "visible",
+        "line-cap": "square",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#e3e3e3",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          10,
+          2,
+          12,
+          3,
+          15,
+          5,
+          16,
+          8,
+          17,
+          12,
+          18,
+          22,
+          19,
+          36
+        ]
+      }
+    },
+    {
+      "id": "R_CountyRoad/Tunel/1",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_CountyRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 13,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#d7d7d7",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          10,
+          3,
+          12,
+          5,
+          15,
+          7,
+          16,
+          10,
+          17,
+          14,
+          18,
+          24,
+          19,
+          38
+        ]
+      }
+    },
+    {
+      "id": "R_CountyRoad/Tunel/0",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_CountyRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 13,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#f0f0f0",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          10,
+          2,
+          12,
+          3,
+          15,
+          5,
+          16,
+          8,
+          17,
+          12,
+          18,
+          22,
+          19,
+          36
+        ]
+      }
+    },
+    {
+      "id": "R_CountyRoad/Tunel_1/1",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_CountyRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 9,
+      "maxzoom": 13,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#d7d7d7",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          10,
+          3,
+          12,
+          5,
+          15,
+          7,
+          16,
+          10,
+          17,
+          14,
+          18,
+          24,
+          19,
+          38
+        ]
+      }
+    },
+    {
+      "id": "R_CountyRoad/Tunel_1/0",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_CountyRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 9,
+      "maxzoom": 13,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#ffffff",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          10,
+          2,
+          12,
+          3,
+          15,
+          5,
+          16,
+          8,
+          17,
+          12,
+          18,
+          22,
+          19,
+          36
+        ]
+      }
+    },
+    {
+      "id": "R_CountyRoad/Road/1",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_CountyRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        2
+      ],
+      "minzoom": 9,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#d7d7d7",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          10,
+          3,
+          12,
+          5,
+          15,
+          7,
+          16,
+          10,
+          17,
+          14,
+          18,
+          24,
+          19,
+          38
+        ]
+      }
+    },
+    {
+      "id": "R_CountyRoad/Road/0",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_CountyRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        2
+      ],
+      "minzoom": 9,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#ffffff",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          10,
+          2,
+          12,
+          3,
+          15,
+          5,
+          16,
+          8,
+          17,
+          12,
+          18,
+          22,
+          19,
+          36
+        ]
+      }
+    },
+    {
+      "id": "R_PrimaryRoad/Construction/1",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_PrimaryRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "minzoom": 13,
+      "layout": {
+        "visibility": "visible",
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#a8acb3",
+        "line-dasharray": [
+          0.5,
+          1
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          10,
+          4,
+          11,
+          5,
+          13,
+          7,
+          15,
+          10,
+          17,
+          14,
+          18,
+          24,
+          19,
+          38
+        ]
+      }
+    },
+    {
+      "id": "R_PrimaryRoad/Construction/0",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_PrimaryRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "minzoom": 13,
+      "layout": {
+        "visibility": "visible",
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#e3e3e3",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          10,
+          2,
+          11,
+          3,
+          13,
+          5,
+          15,
+          8,
+          17,
+          12,
+          18,
+          22,
+          19,
+          36
+        ]
+      }
+    },
+    {
+      "id": "R_PrimaryRoad/Tunel/1",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_PrimaryRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 13,
+      "layout": {
+        "visibility": "visible",
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#f7d78c",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          10,
+          4,
+          11,
+          5,
+          13,
+          7,
+          15,
+          10,
+          17,
+          14,
+          18,
+          24,
+          19,
+          38
+        ]
+      }
+    },
+    {
+      "id": "R_PrimaryRoad/Tunel/0",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_PrimaryRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 13,
+      "layout": {
+        "visibility": "visible",
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#DEB887",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          10,
+          2,
+          11,
+          3,
+          13,
+          5,
+          15,
+          8,
+          17,
+          12,
+          18,
+          22,
+          19,
+          36
+        ]
+      }
+    },
+    {
+      "id": "R_PrimaryRoad/Tunel_1/1",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_PrimaryRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 9,
+      "maxzoom": 13,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#f7d78c",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          10,
+          4,
+          11,
+          5,
+          13,
+          7,
+          15,
+          10,
+          17,
+          14,
+          18,
+          24,
+          19,
+          38
+        ]
+      }
+    },
+    {
+      "id": "R_PrimaryRoad/Tunel_1/0",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_PrimaryRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 9,
+      "maxzoom": 13,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#fff0bb",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          10,
+          2,
+          11,
+          3,
+          13,
+          5,
+          15,
+          8,
+          17,
+          12,
+          18,
+          22,
+          19,
+          36
+        ]
+      }
+    },
+    {
+      "id": "R_PrimaryRoad/Road/1",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_PrimaryRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        2
+      ],
+      "minzoom": 9,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#f7d78c",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          10,
+          4,
+          11,
+          5,
+          13,
+          7,
+          15,
+          10,
+          17,
+          14,
+          18,
+          24,
+          19,
+          38
+        ]
+      }
+    },
+    {
+      "id": "R_PrimaryRoad/Road/0",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_PrimaryRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        2
+      ],
+      "minzoom": 9,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#fff0bb",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          10,
+          2,
+          11,
+          3,
+          13,
+          5,
+          15,
+          8,
+          17,
+          12,
+          18,
+          22,
+          19,
+          36
+        ]
+      }
+    },
+    {
+      "id": "R_ProvincialRoad/Construction/1",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_ProvincialRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#a8acb3",
+        "line-dasharray": [
+          0.5,
+          1
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          10,
+          4,
+          11,
+          5,
+          13,
+          7,
+          15,
+          10,
+          17,
+          14,
+          18,
+          24,
+          19,
+          38
+        ]
+      }
+    },
+    {
+      "id": "R_ProvincialRoad/Construction/0",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_ProvincialRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible",
+        "line-cap": "square",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#e3e3e3",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          10,
+          2,
+          11,
+          3,
+          13,
+          5,
+          15,
+          8,
+          17,
+          12,
+          18,
+          22,
+          19,
+          36
+        ]
+      }
+    },
+    {
+      "id": "R_ProvincialRoad/Tunel/1",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_ProvincialRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 13,
+      "layout": {
+        "visibility": "visible",
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#f7d78c",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          8,
+          1,
+          10,
+          4,
+          11,
+          5,
+          13,
+          7,
+          15,
+          10,
+          17,
+          14,
+          18,
+          24,
+          19,
+          38
+        ]
+      }
+    },
+    {
+      "id": "R_ProvincialRoad/Tunel/0",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_ProvincialRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 13,
+      "layout": {
+        "visibility": "visible",
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#DEB887",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          8,
+          0.5,
+          10,
+          2,
+          11,
+          3,
+          13,
+          5,
+          15,
+          8,
+          17,
+          12,
+          18,
+          22,
+          19,
+          36
+        ]
+      }
+    },
+    {
+      "id": "R_ProvincialRoad/Tunel_1/1",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_ProvincialRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 8,
+      "maxzoom": 13,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#f7d78c",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          8,
+          1,
+          10,
+          4,
+          11,
+          5,
+          13,
+          7,
+          15,
+          10,
+          17,
+          14,
+          18,
+          24,
+          19,
+          38
+        ]
+      }
+    },
+    {
+      "id": "R_ProvincialRoad/Tunel_1/0",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_ProvincialRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 8,
+      "maxzoom": 13,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#fff0bb",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          8,
+          0.5,
+          10,
+          2,
+          11,
+          3,
+          13,
+          5,
+          15,
+          8,
+          17,
+          12,
+          18,
+          22,
+          19,
+          36
+        ]
+      }
+    },
+    {
+      "id": "R_ProvincialRoad/Road/1",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_ProvincialRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        2
+      ],
+      "minzoom": 8,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#f7d78c",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          8,
+          1,
+          10,
+          4,
+          11,
+          5,
+          13,
+          7,
+          15,
+          10,
+          17,
+          14,
+          18,
+          24,
+          19,
+          38
+        ]
+      }
+    },
+    {
+      "id": "R_ProvincialRoad/Road/0",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_ProvincialRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        2
+      ],
+      "minzoom": 8,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#fff0bb",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          8,
+          0.5,
+          10,
+          2,
+          11,
+          3,
+          13,
+          5,
+          15,
+          8,
+          17,
+          12,
+          18,
+          22,
+          19,
+          36
+        ]
+      }
+    },
+    {
+      "id": "R_NationalRoad/Construction/1",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_NationalRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "minzoom": 9,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#a8acb3",
+        "line-dasharray": [
+          0.5,
+          1
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          8,
+          3,
+          9,
+          4,
+          11,
+          5,
+          13,
+          7,
+          15,
+          12,
+          17,
+          18,
+          18,
+          28,
+          19,
+          52
+        ]
+      }
+    },
+    {
+      "id": "R_NationalRoad/Construction/0",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_NationalRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "minzoom": 9,
+      "layout": {
+        "visibility": "visible",
+        "line-cap": "square",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#e3e3e3",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          8,
+          1,
+          9,
+          2,
+          11,
+          3,
+          13,
+          5,
+          15,
+          10,
+          17,
+          16,
+          18,
+          26,
+          19,
+          50
+        ]
+      }
+    },
+    {
+      "id": "R_NationalRoad/Tunel/1",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_NationalRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 13,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#f7d78c",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          8,
+          3,
+          9,
+          4,
+          11,
+          5,
+          13,
+          7,
+          15,
+          12,
+          17,
+          18,
+          18,
+          28,
+          19,
+          52
+        ]
+      }
+    },
+    {
+      "id": "R_NationalRoad/Tunel/0",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_NationalRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 13,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#DEB887",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          8,
+          1,
+          9,
+          2,
+          11,
+          3,
+          13,
+          5,
+          15,
+          10,
+          17,
+          16,
+          18,
+          26,
+          19,
+          50
+        ]
+      }
+    },
+    {
+      "id": "R_NationalRoad/Tunel_1/1",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_NationalRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 7,
+      "maxzoom": 13,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#f7d78c",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          8,
+          3,
+          9,
+          4,
+          11,
+          5,
+          13,
+          7,
+          15,
+          12,
+          17,
+          18,
+          18,
+          28,
+          19,
+          52
+        ]
+      }
+    },
+    {
+      "id": "R_NationalRoad/Tunel_1/0",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_NationalRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 7,
+      "maxzoom": 13,
+      "layout": {
+        "visibility": "visible",
+        "line-cap": "square",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#fff0bb",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          8,
+          1,
+          9,
+          2,
+          11,
+          3,
+          13,
+          5,
+          15,
+          10,
+          17,
+          16,
+          18,
+          26,
+          19,
+          50
+        ]
+      }
+    },
+    {
+      "id": "R_NationalRoad/Road/1",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_NationalRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        2
+      ],
+      "minzoom": 7,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#f7d78c",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          8,
+          3,
+          9,
+          4,
+          11,
+          5,
+          13,
+          7,
+          15,
+          12,
+          17,
+          18,
+          18,
+          28,
+          19,
+          52
+        ]
+      }
+    },
+    {
+      "id": "R_NationalRoad/Road/0",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_NationalRoad",
+      "filter": [
+        "==",
+        "_symbol",
+        2
+      ],
+      "minzoom": 7,
+      "layout": {
+        "visibility": "visible",
+        "line-cap": "square",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#fff0bb",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          8,
+          1,
+          9,
+          2,
+          11,
+          3,
+          13,
+          5,
+          15,
+          10,
+          17,
+          16,
+          18,
+          26,
+          19,
+          50
+        ]
+      }
+    },
+    {
+      "id": "R_NationalRoad_Simple",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_NationalRoad_Simple",
+      "minzoom": 6,
+      "maxzoom": 7,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          6,
+          "#ffe5a9",
+          8,
+          "#f7d78c"
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          6,
+          1,
+          8,
+          3
+        ]
+      }
+    },
+    {
+      "id": "R_UrbanHighway/Construction/1",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_UrbanHighway",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#a8acb3",
+        "line-dasharray": [
+          0.5,
+          1
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          7,
+          2,
+          8,
+          3,
+          9,
+          4,
+          10,
+          5,
+          13,
+          8,
+          15,
+          12,
+          17,
+          20,
+          18,
+          38,
+          19,
+          72
+        ]
+      }
+    },
+    {
+      "id": "R_UrbanHighway/Construction/0",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_UrbanHighway",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible",
+        "line-cap": "square",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#e3e3e3",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          7,
+          1,
+          9,
+          2,
+          10,
+          3,
+          13,
+          6,
+          15,
+          10,
+          17,
+          18,
+          18,
+          36,
+          19,
+          70
+        ]
+      }
+    },
+    {
+      "id": "R_UrbanHighway/Tunel/1",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_UrbanHighway",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 13,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#f7bf5f",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          7,
+          2,
+          8,
+          3,
+          9,
+          4,
+          10,
+          5,
+          13,
+          8,
+          15,
+          12,
+          17,
+          20,
+          18,
+          38,
+          19,
+          72
+        ]
+      }
+    },
+    {
+      "id": "R_UrbanHighway/Tunel/0",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_UrbanHighway",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 13,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#CD853F",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          7,
+          1,
+          9,
+          2,
+          10,
+          3,
+          13,
+          6,
+          15,
+          10,
+          17,
+          18,
+          18,
+          36,
+          19,
+          70
+        ]
+      }
+    },
+    {
+      "id": "R_UrbanHighway/Tunel_1/1",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_UrbanHighway",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 8,
+      "maxzoom": 13,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#f7bf5f",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          7,
+          2,
+          8,
+          3,
+          9,
+          4,
+          10,
+          5,
+          13,
+          8,
+          15,
+          12,
+          17,
+          20,
+          18,
+          38,
+          19,
+          72
+        ]
+      }
+    },
+    {
+      "id": "R_UrbanHighway/Tunel_1/0",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_UrbanHighway",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 8,
+      "maxzoom": 13,
+      "layout": {
+        "visibility": "visible",
+        "line-cap": "square",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#fed151",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          7,
+          1,
+          9,
+          2,
+          10,
+          3,
+          13,
+          6,
+          15,
+          10,
+          17,
+          18,
+          18,
+          36,
+          19,
+          70
+        ]
+      }
+    },
+    {
+      "id": "R_UrbanHighway/Road/1",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_UrbanHighway",
+      "filter": [
+        "==",
+        "_symbol",
+        2
+      ],
+      "minzoom": 8,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#f7bf5f",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          7,
+          2,
+          8,
+          3,
+          9,
+          4,
+          10,
+          5,
+          13,
+          8,
+          15,
+          12,
+          17,
+          20,
+          18,
+          38,
+          19,
+          72
+        ]
+      }
+    },
+    {
+      "id": "R_UrbanHighway/Road/0",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_UrbanHighway",
+      "filter": [
+        "==",
+        "_symbol",
+        2
+      ],
+      "minzoom": 8,
+      "layout": {
+        "visibility": "visible",
+        "line-cap": "square",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#fed151",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          7,
+          1,
+          9,
+          2,
+          10,
+          3,
+          13,
+          6,
+          15,
+          10,
+          17,
+          18,
+          18,
+          36,
+          19,
+          70
+        ]
+      }
+    },
+    {
+      "id": "R_ExpressWay/Construction/1",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_ExpressWay",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "minzoom": 8,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#a8acb3",
+        "line-dasharray": [
+          1.66667,
+          1
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          7,
+          2,
+          8,
+          4,
+          10,
+          6,
+          11,
+          8,
+          12,
+          9,
+          13,
+          10,
+          15,
+          13,
+          17,
+          22,
+          18,
+          42,
+          19,
+          80
+        ]
+      }
+    },
+    {
+      "id": "R_ExpressWay/Construction/0",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_ExpressWay",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "minzoom": 8,
+      "layout": {
+        "visibility": "visible",
+        "line-cap": "square",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#e3e3e3",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          8,
+          2,
+          10,
+          4,
+          11,
+          6,
+          12,
+          7,
+          13,
+          8,
+          15,
+          11,
+          17,
+          20,
+          18,
+          40,
+          19,
+          78
+        ]
+      }
+    },
+    {
+      "id": "R_ExpressWay/Tunel/1",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_ExpressWay",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 13,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#f09c3c",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          7,
+          2,
+          8,
+          4,
+          10,
+          6,
+          11,
+          8,
+          12,
+          9,
+          13,
+          10,
+          15,
+          13,
+          17,
+          22,
+          18,
+          42,
+          19,
+          80
+        ]
+      }
+    },
+    {
+      "id": "R_ExpressWay/Tunel/0",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_ExpressWay",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 13,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#CD853F",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          8,
+          2,
+          10,
+          4,
+          11,
+          6,
+          12,
+          7,
+          13,
+          8,
+          15,
+          11,
+          17,
+          20,
+          18,
+          40,
+          19,
+          78
+        ]
+      }
+    },
+    {
+      "id": "R_ExpressWay/Tunel_1/1",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_ExpressWay",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 7,
+      "maxzoom": 13,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#f09c3c",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          7,
+          2,
+          8,
+          4,
+          10,
+          6,
+          11,
+          8,
+          12,
+          9,
+          13,
+          10,
+          15,
+          13,
+          17,
+          22,
+          18,
+          42,
+          19,
+          80
+        ]
+      }
+    },
+    {
+      "id": "R_ExpressWay/Tunel_1/0",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_ExpressWay",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 7,
+      "maxzoom": 13,
+      "layout": {
+        "visibility": "visible",
+        "line-cap": "square",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#ffac4d",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          8,
+          2,
+          10,
+          4,
+          11,
+          6,
+          12,
+          7,
+          13,
+          8,
+          15,
+          11,
+          17,
+          20,
+          18,
+          40,
+          19,
+          78
+        ]
+      }
+    },
+    {
+      "id": "R_ExpressWay/Road/1",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_ExpressWay",
+      "filter": [
+        "==",
+        "_symbol",
+        2
+      ],
+      "minzoom": 7,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#f09c3c",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          7,
+          2,
+          8,
+          4,
+          10,
+          6,
+          11,
+          8,
+          12,
+          9,
+          13,
+          10,
+          15,
+          13,
+          17,
+          22,
+          18,
+          42,
+          19,
+          80
+        ]
+      }
+    },
+    {
+      "id": "R_ExpressWay/Road/0",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_ExpressWay",
+      "filter": [
+        "==",
+        "_symbol",
+        2
+      ],
+      "minzoom": 7,
+      "layout": {
+        "visibility": "visible",
+        "line-cap": "square",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#ffac4d",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          8,
+          2,
+          10,
+          4,
+          11,
+          6,
+          12,
+          7,
+          13,
+          8,
+          15,
+          11,
+          17,
+          20,
+          18,
+          40,
+          19,
+          78
+        ]
+      }
+    },
+    {
+      "id": "R_ExpressWay_Simple",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "R_ExpressWay_Simple",
+      "minzoom": 5,
+      "maxzoom": 7,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          5,
+          "#ffac4d",
+          8,
+          "#f09c3c"
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          5,
+          1,
+          7,
+          2
+        ]
+      }
+    },
+    {
+      "id": "SubwayPolygon",
+      "type": "fill",
+      "source": "epgis",
+      "source-layer": "SubwayPolygon",
+      "minzoom": 15,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": [
+          "get",
+          "UI_COLOR"
+        ],
+        "fill-opacity": 0.7
+      }
+    },
+    {
+      "id": "SubwayLine/plan",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "SubwayLine",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "minzoom": 12,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#bebebe",
+        "line-dasharray": [
+          4,
+          4
+        ],
+        "line-width": 1.2
+      }
+    },
+    {
+      "id": "SubwayLine/construction",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "SubwayLine",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 12,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#bebebe",
+        "line-dasharray": [
+          4,
+          4
+        ],
+        "line-width": 1.2
+      }
+    },
+    {
+      "id": "SubwayLine/operation",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "SubwayLine",
+      "filter": [
+        "==",
+        "_symbol",
+        2
+      ],
+      "minzoom": 10,
+      "layout": {
+        "visibility": "visible",
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": [
+          "get",
+          "UI_COLOR"
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          11,
+          1,
+          15,
+          3,
+          19,
+          5
+        ]
+      }
+    },
+    {
+      "id": "Boundary/Province",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "Boundary",
+      "filter": [
+        "==",
+        "_symbol",
+        0
+      ],
+      "minzoom": 3,
+      "maxzoom": 7,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#989ea6",
+        "line-dasharray": [
+          0.5,
+          1
+        ],
+        "line-width": 1
+      }
+    },
+    {
+      "id": "Boundary/HongKong",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "Boundary",
+      "filter": [
+        "==",
+        "_symbol",
+        1
+      ],
+      "minzoom": 3,
+      "maxzoom": 7,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#989ea6",
+        "line-dasharray": [
+          3,
+          1.5,
+          1.5,
+          1.5
+        ],
+        "line-width": 1
+      }
+    },
+    {
+      "id": "Boundary/Ceasefire",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "Boundary",
+      "filter": [
+        "==",
+        "_symbol",
+        2
+      ],
+      "minzoom": 0,
+      "maxzoom": 7,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#989ea6",
+        "line-dasharray": [
+          0.5,
+          1
+        ],
+        "line-width": 1
+      }
+    },
+    {
+      "id": "Boundary/Nation",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "Boundary",
+      "filter": [
+        "==",
+        "_symbol",
+        3
+      ],
+      "minzoom": 0,
+      "maxzoom": 7,
+      "layout": {
+        "visibility": "visible",
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#eaaeb6",
+        "line-width": 1
+      }
+    },
+    {
+      "id": "Boundary/UndecidedNation",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "Boundary",
+      "filter": [
+        "==",
+        "_symbol",
+        4
+      ],
+      "minzoom": 0,
+      "maxzoom": 7,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#eaaeb6",
+        "line-dasharray": [
+          0.5,
+          1
+        ],
+        "line-width": 1
+      }
+    },
+    {
+      "id": "Boundary/Dispute",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "Boundary",
+      "filter": [
+        "==",
+        "_symbol",
+        5
+      ],
+      "minzoom": 0,
+      "maxzoom": 7,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#eaaeb6",
+        "line-dasharray": [
+          0.5,
+          1
+        ],
+        "line-width": 1
+      }
+    },
+    {
+      "id": "Boundary/UndecidedNationC",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "Boundary",
+      "filter": [
+        "==",
+        "_symbol",
+        6
+      ],
+      "maxzoom": 7,
+      "layout": {
+        "visibility": "visible",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#e04747",
+        "line-dasharray": [
+          0.5,
+          1
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          0,
+          1,
+          4,
+          2,
+          5,
+          3,
+          7,
+          4
+        ]
+      }
+    },
+    {
+      "id": "Boundary/NationC",
+      "type": "line",
+      "source": "epgis",
+      "source-layer": "Boundary",
+      "filter": [
+        "==",
+        "_symbol",
+        7
+      ],
+      "maxzoom": 7,
+      "layout": {
+        "visibility": "visible",
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "#e04747",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          0,
+          1,
+          4,
+          2,
+          5,
+          3,
+          7,
+          4
+        ]
+      }
+    },
+    {
+      "id": "2d-Building",
+      "type": "fill",
+      "source": "epgis",
+      "source-layer": "2d-Building",
+      "minzoom": 16,
+      "layout": {},
+      "paint": {
+        "fill-color": "#e6e6e6",
+        "fill-opacity": 0.7
+      }
+    },
+    {
+      "id": "Building",
+      "type": "fill-extrusion",
+      "source": "epgis",
+      "source-layer": "Building",
+      "minzoom": 16,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-extrusion-base": 0,
+        "fill-extrusion-height": [
+          "get",
+          "max_height"
+        ],
+        "fill-extrusion-opacity": 0.65,
+        "fill-extrusion-color": "rgb(255,255,255)"
+      }
+    },
+    {
+      "id": "SouthIsland",
+      "type": "symbol",
+      "source": "epgis",
+      "source-layer": "SouthIsland",
+      "minzoom": 4,
+      "layout": {
+        "visibility": "visible",
+        "text-font": [
+          "Microsoft YaHei Regular"
+        ],
+        "text-size": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          4,
+          10,
+          8,
+          11
+        ],
+        "text-anchor": "center",
+        "text-field": "{_name}",
+        "text-optional": true
+      },
+      "paint": {
+        "text-color": "#62718a",
+        "text-halo-color": "#FFFFFF",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "AOI/label/label",
+      "type": "symbol",
+      "source": "epgis",
+      "source-layer": "AOI/label",
+      "minzoom": 15,
+      "layout": {
+        "visibility": "visible",
+        "text-font": [
+          "Microsoft YaHei Regular"
+        ],
+        "text-size": 13,
+        "text-field": "{_name}",
+        "text-optional": true
+      },
+      "paint": {
+        "text-color": "#9C9C9C",
+        "text-halo-color": "#FFFFFF",
+        "text-halo-width": 1.2
+      }
+    },
+    {
+      "id": "Railway/label/label",
+      "type": "symbol",
+      "source": "epgis",
+      "source-layer": "Railway/label",
+      "minzoom": 14,
+      "layout": {
+        "visibility": "visible",
+        "symbol-placement": "line",
+        "symbol-spacing": 600,
+        "text-field": "{_name}",
+        "text-font": [
+          "Microsoft YaHei Regular"
+        ],
+        "text-letter-spacing": 0.2,
+        "text-optional": true,
+        "text-size": 12
+      },
+      "paint": {
+        "text-color": "#606066",
+        "text-halo-color": "#FFFFFF",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "R_Pathway/label/name",
+      "type": "symbol",
+      "source": "epgis",
+      "source-layer": "R_Pathway/label",
+      "minzoom": 16,
+      "layout": {
+        "visibility": "visible",
+        "symbol-placement": "line",
+        "symbol-spacing": 600,
+        "text-field": "{_name}",
+        "text-font": [
+          "Microsoft YaHei Regular"
+        ],
+        "text-letter-spacing": 0.2,
+        "text-optional": true,
+        "text-size": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          16,
+          13,
+          18,
+          15
+        ]
+      },
+      "paint": {
+        "text-color": "#6d7073",
+        "text-halo-color": "#FFFFFF",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "R_VillageRoad/label/name",
+      "type": "symbol",
+      "source": "epgis",
+      "source-layer": "R_VillageRoad/label",
+      "minzoom": 15,
+      "layout": {
+        "visibility": "visible",
+        "symbol-placement": "line",
+        "symbol-spacing": 600,
+        "text-field": "{_name}",
+        "text-font": [
+          "Microsoft YaHei Regular"
+        ],
+        "text-letter-spacing": 0.2,
+        "text-optional": true,
+        "text-size": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          16,
+          13,
+          18,
+          15
+        ]
+      },
+      "paint": {
+        "text-color": "#6d7073",
+        "text-halo-color": "#FFFFFF",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "R_OrdinaryRoad/label/name",
+      "type": "symbol",
+      "source": "epgis",
+      "source-layer": "R_OrdinaryRoad/label",
+      "minzoom": 15,
+      "layout": {
+        "visibility": "visible",
+        "symbol-placement": "line",
+        "symbol-spacing": 600,
+        "text-field": "{_name}",
+        "text-font": [
+          "Microsoft YaHei Regular"
+        ],
+        "text-letter-spacing": 0.2,
+        "text-optional": true,
+        "text-size": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          15,
+          12,
+          16,
+          13,
+          17,
+          15,
+          18,
+          16
+        ]
+      },
+      "paint": {
+        "text-color": "#6d7073",
+        "text-halo-color": "#FFFFFF",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "R_SecondaryRoad/label/name",
+      "type": "symbol",
+      "source": "epgis",
+      "source-layer": "R_SecondaryRoad/label",
+      "minzoom": 14,
+      "layout": {
+        "visibility": "visible",
+        "symbol-placement": "line",
+        "symbol-spacing": 600,
+        "text-field": "{_name}",
+        "text-font": [
+          "Microsoft YaHei Regular"
+        ],
+        "text-letter-spacing": 0.2,
+        "text-optional": true,
+        "text-size": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          12,
+          12,
+          14,
+          13,
+          16,
+          15,
+          18,
+          18
+        ]
+      },
+      "paint": {
+        "text-color": "#6d7073",
+        "text-halo-color": "#FFFFFF",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "R_TownshipRoad/label/name",
+      "type": "symbol",
+      "source": "epgis",
+      "source-layer": "R_TownshipRoad/label",
+      "minzoom": 14,
+      "layout": {
+        "visibility": "visible",
+        "symbol-placement": "line",
+        "symbol-spacing": 600,
+        "text-field": "{_name}",
+        "text-font": [
+          "Microsoft YaHei Regular"
+        ],
+        "text-letter-spacing": 0.2,
+        "text-optional": true,
+        "text-size": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          15,
+          12,
+          16,
+          13,
+          17,
+          15,
+          18,
+          16
+        ]
+      },
+      "paint": {
+        "text-color": "#6d7073",
+        "text-halo-color": "#FFFFFF",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "R_CountyRoad/label/name",
+      "type": "symbol",
+      "source": "epgis",
+      "source-layer": "R_CountyRoad/label",
+      "filter": [
+        "==",
+        "_label_class",
+        0
+      ],
+      "minzoom": 14,
+      "layout": {
+        "visibility": "visible",
+        "symbol-placement": "line",
+        "symbol-spacing": 600,
+        "text-field": "{_name}",
+        "text-font": [
+          "Microsoft YaHei Regular"
+        ],
+        "text-letter-spacing": 0.2,
+        "text-optional": true,
+        "text-size": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          12,
+          12,
+          14,
+          13,
+          16,
+          15,
+          18,
+          18
+        ]
+      },
+      "paint": {
+        "text-color": "#6d7073",
+        "text-halo-color": "#FFFFFF",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "R_CountyRoad/label/RouteNO",
+      "type": "symbol",
+      "source": "epgis",
+      "source-layer": "R_CountyRoad/label",
+      "filter": [
+        "==",
+        "_label_class",
+        1
+      ],
+      "minzoom": 12,
+      "layout": {
+        "visibility": "visible",
+        "symbol-placement": "point",
+        "text-font": [
+          "Microsoft YaHei Regular"
+        ],
+        "text-size": 10,
+        "symbol-spacing": 600,
+        "text-field": "{_name}",
+        "icon-image": "icons_28_15_150",
+        "icon-text-fit": "both",
+        "icon-text-fit-padding": [
+          9,
+          4.5,
+          6.5,
+          4.5
+        ],
+        "icon-rotation-alignment": "viewport",
+        "text-rotation-alignment": "viewport",
+        "text-optional": true
+      },
+      "paint": {
+        "text-color": "#4a4a4a",
+        "text-halo-color": "#4a4a4a",
+        "text-halo-width": 0
+      }
+    },
+    {
+      "id": "R_PrimaryRoad/label/name",
+      "type": "symbol",
+      "source": "epgis",
+      "source-layer": "R_PrimaryRoad/label",
+      "minzoom": 13,
+      "layout": {
+        "visibility": "visible",
+        "symbol-placement": "line",
+        "symbol-spacing": 600,
+        "text-field": "{_name}",
+        "text-font": [
+          "Microsoft YaHei Regular"
+        ],
+        "text-letter-spacing": 0.2,
+        "text-optional": true,
+        "text-size": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          13,
+          14,
+          16,
+          15,
+          18,
+          18
+        ]
+      },
+      "paint": {
+        "text-color": "#827a70",
+        "text-halo-color": "#FFFFFF",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "R_ProvincialRoad/label/name",
+      "type": "symbol",
+      "source": "epgis",
+      "source-layer": "R_ProvincialRoad/label",
+      "filter": [
+        "==",
+        "_label_class",
+        0
+      ],
+      "minzoom": 12,
+      "layout": {
+        "visibility": "visible",
+        "symbol-placement": "line",
+        "symbol-spacing": 600,
+        "text-field": "{_name}",
+        "text-font": [
+          "Microsoft YaHei Regular"
+        ],
+        "text-letter-spacing": 0.2,
+        "text-optional": true,
+        "text-size": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          13,
+          14,
+          16,
+          15,
+          18,
+          18
+        ]
+      },
+      "paint": {
+        "text-color": "#827a70",
+        "text-halo-color": "#FFFFFF",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "R_ProvincialRoad/label/RouteNO",
+      "type": "symbol",
+      "source": "epgis",
+      "source-layer": "R_ProvincialRoad/label",
+      "filter": [
+        "==",
+        "_label_class",
+        1
+      ],
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible",
+        "symbol-placement": "point",
+        "text-font": [
+          "Microsoft YaHei Regular"
+        ],
+        "text-size": 10,
+        "symbol-spacing": 600,
+        "text-field": "{_name}",
+        "icon-image": "icons_28_15_149",
+        "icon-text-fit": "both",
+        "icon-text-fit-padding": [
+          9,
+          4.5,
+          6.5,
+          4.5
+        ],
+        "icon-rotation-alignment": "viewport",
+        "text-rotation-alignment": "viewport",
+        "text-optional": true
+      },
+      "paint": {
+        "text-color": "#4a4a4a",
+        "text-halo-color": "#4a4a4a",
+        "text-halo-width": 0
+      }
+    },
+    {
+      "id": "R_NationalRoad/label/RouteNO",
+      "type": "symbol",
+      "source": "epgis",
+      "source-layer": "R_NationalRoad/label",
+      "filter": [
+        "==",
+        "_label_class",
+        0
+      ],
+      "minzoom": 9,
+      "layout": {
+        "visibility": "visible",
+        "symbol-placement": "point",
+        "text-font": [
+          "Microsoft YaHei Regular"
+        ],
+        "text-size": 10,
+        "symbol-spacing": 600,
+        "text-field": "{_name}",
+        "icon-image": "icons_28_15_148",
+        "icon-text-fit": "both",
+        "icon-text-fit-padding": [
+          9,
+          4.5,
+          6.5,
+          4.5
+        ],
+        "icon-rotation-alignment": "viewport",
+        "text-rotation-alignment": "viewport",
+        "text-optional": true
+      },
+      "paint": {
+        "text-color": "#FFFFFF",
+        "text-halo-color": "#ffffff",
+        "text-halo-width": 0
+      }
+    },
+    {
+      "id": "R_NationalRoad/label/name",
+      "type": "symbol",
+      "source": "epgis",
+      "source-layer": "R_NationalRoad/label",
+      "filter": [
+        "==",
+        "_label_class",
+        1
+      ],
+      "minzoom": 12,
+      "layout": {
+        "visibility": "visible",
+        "symbol-placement": "line",
+        "symbol-spacing": 600,
+        "text-field": "{_name}",
+        "text-font": [
+          "Microsoft YaHei Regular"
+        ],
+        "text-letter-spacing": 0.2,
+        "text-optional": true,
+        "text-size": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          10,
+          12,
+          11,
+          13,
+          13,
+          14,
+          16,
+          15,
+          18,
+          20
+        ]
+      },
+      "paint": {
+        "text-color": "#606066",
+        "text-halo-color": "#FFFFFF",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "R_UrbanHighway/label/name",
+      "type": "symbol",
+      "source": "epgis",
+      "source-layer": "R_UrbanHighway/label",
+      "minzoom": 12,
+      "layout": {
+        "visibility": "visible",
+        "symbol-placement": "line",
+        "symbol-spacing": 600,
+        "text-field": "{_name}",
+        "text-font": [
+          "Microsoft YaHei Regular"
+        ],
+        "text-letter-spacing": 0.2,
+        "text-optional": true,
+        "text-size": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          10,
+          12,
+          11,
+          13,
+          13,
+          14,
+          16,
+          15,
+          18,
+          20
+        ]
+      },
+      "paint": {
+        "text-color": "#606066",
+        "text-halo-color": "#FFFFFF",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "R_ExpressWay/label/RouteNO",
+      "type": "symbol",
+      "source": "epgis",
+      "source-layer": "R_ExpressWay/label",
+      "filter": [
+        "all",
+        [
+          "==",
+          "_label_class",
+          0
+        ],
+        [
+          "==",
+          "$type",
+          "Point"
+        ]
+      ],
+      "minzoom": 8,
+      "layout": {
+        "visibility": "visible",
+        "symbol-placement": "point",
+        "text-font": [
+          "Microsoft YaHei Regular"
+        ],
+        "text-size": 10,
+        "symbol-spacing": 600,
+        "text-field": "{_name}",
+        "icon-image": "icons_28_15_146",
+        "icon-text-fit": "both",
+        "icon-text-fit-padding": [
+          9,
+          4.5,
+          6.5,
+          4.5
+        ],
+        "icon-rotation-alignment": "viewport",
+        "text-rotation-alignment": "viewport",
+        "text-optional": true
+      },
+      "paint": {
+        "text-color": "#FFFFFF",
+        "text-halo-color": "#ffffff",
+        "text-halo-width": 0
+      }
+    },
+    {
+      "id": "R_ExpressWay/label/name",
+      "type": "symbol",
+      "source": "epgis",
+      "source-layer": "R_ExpressWay/label",
+      "filter": [
+        "==",
+        "_label_class",
+        1
+      ],
+      "minzoom": 12,
+      "layout": {
+        "visibility": "visible",
+        "symbol-placement": "line",
+        "symbol-spacing": 600,
+        "text-field": "{_name}",
+        "text-font": [
+          "Microsoft YaHei Regular"
+        ],
+        "text-letter-spacing": 0.2,
+        "text-optional": true,
+        "text-size": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          10,
+          12,
+          11,
+          13,
+          13,
+          14,
+          16,
+          15,
+          18,
+          20
+        ]
+      },
+      "paint": {
+        "text-color": "#606066",
+        "text-halo-color": "#FFFFFF",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "SubwayLine/label/label",
+      "type": "symbol",
+      "source": "epgis",
+      "source-layer": "SubwayLine/label",
+      "minzoom": 13,
+      "layout": {
+        "visibility": "visible",
+        "symbol-placement": "line",
+        "text-font": [
+          "Microsoft YaHei Regular"
+        ],
+        "text-size": 12,
+        "text-field": "{_name}",
+        "text-optional": true
+      },
+      "paint": {
+        "text-color": [
+          "get",
+          "UI_COLOR"
+        ],
+        "text-halo-color": "#FFFFFF",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "Village",
+      "type": "symbol",
+      "source": "epgis",
+      "source-layer": "Village",
+      "minzoom": 13,
+      "layout": {
+        "visibility": "visible",
+        "text-size": 12,
+        "text-field": "{_name}",
+        "text-anchor": "center",
+        "icon-anchor": "center",
+        "text-font": [
+          "Microsoft YaHei Regular"
+        ],
+        "text-max-width": 8,
+        "text-justify": "center",
+        "icon-allow-overlap": false,
+        "text-allow-overlap": false
+      },
+      "paint": {
+        "text-color": "#a3a3a3",
+        "text-halo-color": "#FFFFFF",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "BuildingNO",
+      "type": "symbol",
+      "source": "epgis",
+      "source-layer": "BuildingNO",
+      "minzoom": 17,
+      "layout": {
+        "visibility": "visible",
+        "text-size": 12,
+        "text-field": "{_name}",
+        "text-anchor": "center",
+        "icon-anchor": "center",
+        "text-font": [
+          "Microsoft YaHei Regular"
+        ],
+        "text-max-width": 8,
+        "text-justify": "center",
+        "icon-allow-overlap": false,
+        "text-allow-overlap": false
+      },
+      "paint": {
+        "text-color": "#a3a3a3",
+        "text-halo-color": "#FFFFFF",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "POI7",
+      "type": "symbol",
+      "source": "epgis",
+      "source-layer": "POI7",
+      "minzoom": 18,
+      "layout": {
+        "visibility": "visible",
+        "icon-image": "{icon}",
+        "icon-size": 0.9,
+        "text-size": 12,
+        "text-field": "{_name}",
+        "text-anchor": "left",
+        "icon-anchor": "bottom",
+        "text-font": [
+          "Microsoft YaHei Regular"
+        ],
+        "text-max-width": 8,
+        "text-justify": "left",
+        "text-offset": [
+          1,
+          -1
+        ],
+        "icon-allow-overlap": false,
+        "text-allow-overlap": false
+      },
+      "paint": {
+        "text-color": "#696464",
+        "text-halo-color": "#ffffff",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "POI6",
+      "type": "symbol",
+      "source": "epgis",
+      "source-layer": "POI6",
+      "minzoom": 17,
+      "layout": {
+        "visibility": "visible",
+        "icon-image": "{icon}",
+        "icon-size": 0.9,
+        "text-size": 12,
+        "text-field": "{_name}",
+        "text-anchor": "left",
+        "icon-anchor": "bottom",
+        "text-font": [
+          "Microsoft YaHei Regular"
+        ],
+        "text-max-width": 8,
+        "text-justify": "left",
+        "text-offset": [
+          1,
+          -1
+        ],
+        "icon-allow-overlap": false,
+        "text-allow-overlap": false
+      },
+      "paint": {
+        "text-color": "#696464",
+        "text-halo-color": "#ffffff",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "POI5",
+      "type": "symbol",
+      "source": "epgis",
+      "source-layer": "POI5",
+      "minzoom": 16,
+      "layout": {
+        "visibility": "visible",
+        "icon-image": "{icon}",
+        "icon-size": 0.9,
+        "text-size": 12,
+        "text-field": "{_name}",
+        "text-anchor": "left",
+        "icon-anchor": "bottom",
+        "text-font": [
+          "Microsoft YaHei Regular"
+        ],
+        "text-max-width": 8,
+        "text-justify": "left",
+        "text-offset": [
+          1,
+          -1
+        ],
+        "icon-allow-overlap": false,
+        "text-allow-overlap": false
+      },
+      "paint": {
+        "text-color": "#696464",
+        "text-halo-color": "#ffffff",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "POI4",
+      "type": "symbol",
+      "source": "epgis",
+      "source-layer": "POI4",
+      "minzoom": 15.5,
+      "layout": {
+        "visibility": "visible",
+        "icon-image": "{icon}",
+        "icon-size": 0.9,
+        "text-size": 12,
+        "text-field": "{_name}",
+        "text-anchor": "left",
+        "icon-anchor": "bottom",
+        "text-font": [
+          "Microsoft YaHei Regular"
+        ],
+        "text-max-width": 8,
+        "text-justify": "left",
+        "text-offset": [
+          1,
+          -1
+        ],
+        "icon-allow-overlap": false,
+        "text-allow-overlap": false
+      },
+      "paint": {
+        "text-color": "#696464",
+        "text-halo-color": "#ffffff",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "SubwayExit",
+      "type": "symbol",
+      "source": "epgis",
+      "source-layer": "SubwayExit",
+      "minzoom": 15.5,
+      "layout": {
+        "visibility": "visible",
+        "icon-image": "icons_28_15_152",
+        "icon-size": 0.9,
+        "text-size": 9,
+        "text-field": "{_name}",
+        "text-anchor": "center",
+        "icon-anchor": "center",
+        "text-font": [
+          "Microsoft YaHei Regular"
+        ],
+        "text-max-width": 8,
+        "text-justify": "center",
+        "text-allow-overlap": true
+      },
+      "paint": {
+        "text-color": "#2880e4",
+        "text-halo-color": "#ffffff",
+        "text-halo-width": 0.6
+      }
+    },
+    {
+      "id": "POI3",
+      "type": "symbol",
+      "source": "epgis",
+      "source-layer": "POI3",
+      "minzoom": 14.5,
+      "layout": {
+        "visibility": "visible",
+        "icon-image": "{icon}",
+        "icon-size": 0.9,
+        "text-size": 12,
+        "text-field": "{_name}",
+        "text-anchor": "left",
+        "icon-anchor": "bottom",
+        "text-font": [
+          "Microsoft YaHei Regular"
+        ],
+        "text-max-width": 8,
+        "text-justify": "left",
+        "text-offset": [
+          1,
+          -1
+        ],
+        "icon-allow-overlap": false,
+        "text-allow-overlap": false
+      },
+      "paint": {
+        "text-color": "#696464",
+        "text-halo-color": "#ffffff",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "POI2",
+      "type": "symbol",
+      "source": "epgis",
+      "source-layer": "POI2",
+      "minzoom": 13,
+      "layout": {
+        "visibility": "visible",
+        "icon-image": "{icon}",
+        "icon-size": 0.9,
+        "text-size": 12,
+        "text-field": "{_name}",
+        "text-anchor": "left",
+        "icon-anchor": "bottom",
+        "text-font": [
+          "Microsoft YaHei Regular"
+        ],
+        "text-max-width": 8,
+        "text-justify": "left",
+        "text-offset": [
+          1,
+          -1
+        ],
+        "icon-allow-overlap": false,
+        "text-allow-overlap": false
+      },
+      "paint": {
+        "text-color": "#696464",
+        "text-halo-color": "#ffffff",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "POI1",
+      "type": "symbol",
+      "source": "epgis",
+      "source-layer": "POI1",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible",
+        "icon-image": "{icon}",
+        "icon-size": 0.9,
+        "text-size": 12,
+        "text-field": "{_name}",
+        "text-anchor": "left",
+        "icon-anchor": "bottom",
+        "text-font": [
+          "Microsoft YaHei Regular"
+        ],
+        "text-max-width": 8,
+        "text-justify": "left",
+        "text-offset": [
+          1,
+          -1
+        ],
+        "icon-allow-overlap": false,
+        "text-allow-overlap": false
+      },
+      "paint": {
+        "text-color": "#696464",
+        "text-halo-color": "#ffffff",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "Street",
+      "type": "symbol",
+      "source": "epgis",
+      "source-layer": "Street",
+      "minzoom": 12,
+      "layout": {
+        "visibility": "visible",
+        "text-size": 12,
+        "text-field": "{_name}",
+        "text-anchor": "center",
+        "icon-anchor": "center",
+        "text-font": [
+          "Microsoft YaHei Regular"
+        ],
+        "text-max-width": 8,
+        "text-justify": "center",
+        "icon-allow-overlap": false,
+        "text-allow-overlap": false
+      },
+      "paint": {
+        "text-color": "#a3a3a3",
+        "text-halo-color": "#FFFFFF",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "Town",
+      "type": "symbol",
+      "source": "epgis",
+      "source-layer": "Town",
+      "minzoom": 9.5,
+      "maxzoom": 11,
+      "layout": {
+        "visibility": "visible",
+        "text-size": 12,
+        "text-field": "{_name}",
+        "text-anchor": "center",
+        "icon-anchor": "center",
+        "text-font": [
+          "Microsoft YaHei Regular"
+        ],
+        "text-max-width": 8,
+        "text-justify": "center",
+        "icon-allow-overlap": false,
+        "text-allow-overlap": false
+      },
+      "paint": {
+        "text-color": "#a3a3a3",
+        "text-halo-color": "#FFFFFF",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "SubwayStation",
+      "type": "symbol",
+      "source": "epgis",
+      "source-layer": "SubwayStation",
+      "minzoom": 13,
+      "layout": {
+        "visibility": "visible",
+        "icon-image": "{icon}",
+        "icon-size": 0.9,
+        "text-size": 13,
+        "text-field": "{_name}",
+        "text-anchor": "left",
+        "icon-anchor": "center",
+        "text-font": [
+          "Microsoft YaHei Regular"
+        ],
+        "text-max-width": 8,
+        "text-justify": "left",
+        "text-offset": [
+          1,
+          0
+        ],
+        "icon-allow-overlap": false,
+        "text-allow-overlap": false
+      },
+      "paint": {
+        "icon-color": "#006691",
+        "text-color": "#62718a",
+        "text-halo-color": "#FFFFFF",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "Government",
+      "type": "symbol",
+      "source": "epgis",
+      "source-layer": "Government",
+      "minzoom": 11.5,
+      "layout": {
+        "visibility": "visible",
+        "icon-image": "icons_28_15_105",
+        "icon-size": 0.9,
+        "text-size": 12,
+        "text-field": "{_name}",
+        "text-anchor": "left",
+        "icon-anchor": "bottom",
+        "text-font": [
+          "Microsoft YaHei Regular"
+        ],
+        "text-max-width": 8,
+        "text-justify": "left",
+        "text-offset": [
+          1,
+          -1
+        ],
+        "icon-allow-overlap": false,
+        "text-allow-overlap": false
+      },
+      "paint": {
+        "text-color": "#62718a",
+        "text-halo-color": "#ffffff",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "Airport",
+      "type": "symbol",
+      "source": "epgis",
+      "source-layer": "Airport",
+      "minzoom": 10,
+      "layout": {
+        "visibility": "visible",
+        "icon-image": "icons_28_15_53",
+        "icon-size": 0.9,
+        "text-size": 12,
+        "text-field": "{_name}",
+        "text-anchor": "left",
+        "icon-anchor": "bottom",
+        "text-font": [
+          "Microsoft YaHei Regular"
+        ],
+        "text-max-width": 8,
+        "text-justify": "left",
+        "text-offset": [
+          1,
+          -1
+        ],
+        "icon-allow-overlap": false,
+        "text-allow-overlap": false
+      },
+      "paint": {
+        "text-color": "#3a5c9e",
+        "text-halo-color": "#ffffff",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "County",
+      "type": "symbol",
+      "source": "epgis",
+      "source-layer": "County",
+      "minzoom": 8,
+      "maxzoom": 11.5,
+      "layout": {
+        "visibility": "visible",
+        "text-size": 12,
+        "text-field": "{_name}",
+        "text-anchor": "center",
+        "icon-anchor": "center",
+        "text-font": [
+          "Microsoft YaHei Regular"
+        ],
+        "text-max-width": 8,
+        "text-justify": "center",
+        "icon-allow-overlap": false,
+        "text-allow-overlap": false
+      },
+      "paint": {
+        "icon-color": "#1C0082",
+        "text-color": "#555555",
+        "text-halo-color": "#FFFFFF",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "City",
+      "type": "symbol",
+      "source": "epgis",
+      "source-layer": "City",
+      "minzoom": 5,
+      "maxzoom": 10,
+      "layout": {
+        "visibility": "visible",
+        "icon-image": "{icon}",
+        "icon-size": 0.8,
+        "text-size": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          5,
+          11,
+          7,
+          13,
+          10,
+          15
+        ],
+        "text-field": "{_name}",
+        "text-anchor": "left",
+        "icon-anchor": "center",
+        "text-font": [
+          "Microsoft YaHei Regular"
+        ],
+        "text-max-width": 8,
+        "text-justify": "left",
+        "text-offset": [
+          0.5,
+          0
+        ],
+        "icon-allow-overlap": false,
+        "text-allow-overlap": false
+      },
+      "paint": {
+        "text-color": "#3C3C3C",
+        "text-halo-color": "#ffffff",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "ProvincialCapital2",
+      "type": "symbol",
+      "source": "epgis",
+      "source-layer": "ProvincialCapital",
+      "minzoom": 4,
+      "maxzoom": 10,
+      "filter": [
+        "in",
+        "_name",
+        "澳门"
+      ],
+      "layout": {
+        "visibility": "visible",
+        "icon-image": "icons_28_15_3",
+        "icon-size": 0.9,
+        "text-size": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          5,
+          11,
+          7,
+          13,
+          10,
+          15
+        ],
+        "text-field": "{_name}",
+        "text-anchor": "right",
+        "icon-anchor": "center",
+        "text-font": [
+          "Microsoft YaHei Regular"
+        ],
+        "text-max-width": 8,
+        "text-justify": "left",
+        "text-offset": [
+          -0.7,
+          0
+        ],
+        "icon-allow-overlap": true,
+        "text-allow-overlap": true
+      },
+      "paint": {
+        "text-color": "#252525",
+        "text-halo-color": "#ffffff",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "ProvincialCapital",
+      "type": "symbol",
+      "source": "epgis",
+      "source-layer": "ProvincialCapital",
+      "minzoom": 4,
+      "maxzoom": 10,
+      "filter": [
+        "!in",
+        "_name",
+        "澳门"
+      ],
+      "layout": {
+        "visibility": "visible",
+        "icon-image": "icons_28_15_3",
+        "icon-size": 0.9,
+        "text-size": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          5,
+          11,
+          7,
+          13,
+          10,
+          15
+        ],
+        "text-field": "{_name}",
+        "text-anchor": "left",
+        "icon-anchor": "center",
+        "text-font": [
+          "Microsoft YaHei Regular"
+        ],
+        "text-max-width": 8,
+        "text-justify": "left",
+        "text-offset": [
+          0.7,
+          0
+        ],
+        "icon-allow-overlap": true,
+        "text-allow-overlap": true
+      },
+      "paint": {
+        "text-color": "#252525",
+        "text-halo-color": "#ffffff",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "Ociean",
+      "type": "symbol",
+      "source": "epgis",
+      "source-layer": "Ociean",
+      "minzoom": 3,
+      "layout": {
+        "visibility": "visible",
+        "text-font": [
+          "Microsoft YaHei Regular"
+        ],
+        "text-size": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          4,
+          10,
+          8,
+          13
+        ],
+        "text-anchor": "center",
+        "text-field": "{_name}",
+        "text-optional": true
+      },
+      "paint": {
+        "text-color": "#2e68c1",
+        "text-halo-color": "#FFFFFF",
+        "text-halo-width": 1.6
+      }
+    },
+    {
+      "id": "Nation",
+      "type": "symbol",
+      "source": "epgis",
+      "source-layer": "Nation",
+      "minzoom": 2,
+      "maxzoom": 3,
+      "layout": {
+        "text-font": [
+          "Microsoft YaHei Regular"
+        ],
+        "text-size": 16,
+        "text-anchor": "center",
+        "text-field": "{_name}",
+        "text-optional": true
+      },
+      "paint": {
+        "text-color": "#FF0000",
+        "text-halo-color": "#FFFFFF",
+        "text-halo-width": 1.6
+      }
+    },
+    {
+      "id": "Capital",
+      "type": "symbol",
+      "source": "epgis",
+      "source-layer": "Capital",
+      "minzoom": 3,
+      "maxzoom": 10,
+      "layout": {
+        "icon-image": "icons_28_15_2",
+        "icon-size": 0.9,
+        "text-size": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          4,
+          12,
+          8,
+          14
+        ],
+        "text-field": "{_name}",
+        "text-anchor": "left",
+        "icon-anchor": "center",
+        "text-font": [
+          "Microsoft YaHei Regular"
+        ],
+        "text-max-width": 8,
+        "text-justify": "left",
+        "text-offset": [
+          0.7,
+          0
+        ],
+        "icon-allow-overlap": false,
+        "text-allow-overlap": false
+      },
+      "paint": {
+        "text-color": "#252525",
+        "text-halo-color": "#ffffff",
+        "text-halo-width": 1
+      }
+    }
+  ],
+  "id": "Streets.zvLK"
+}
