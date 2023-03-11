@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@micro-zoe/micro-app': ^0.8.10
+  '@micro-zoe/micro-app': ^0.6.2
   '@types/node': ^16.11.56
   '@vitejs/plugin-vue': ^3.0.3
   '@vue/tsconfig': ^0.1.3
@@ -18,7 +18,7 @@ specifiers:
   vue3-hljs: ^0.1.4
 
 dependencies:
-  '@micro-zoe/micro-app': 0.8.10
+  '@micro-zoe/micro-app': 0.6.2
 
 devDependencies:
   '@types/node': 16.18.14
@@ -120,8 +120,8 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
 
-  /@micro-zoe/micro-app/0.8.10:
-    resolution: {integrity: sha512-Zb1G5UrOAEHhiAlanzHJiBlRFHMd4+C/Q5jkwTM991R7blb1F6uGY47pmcunzHns48Kj6k9v2+CLsozGyhQmyw==}
+  /@micro-zoe/micro-app/0.6.2:
+    resolution: {integrity: sha512-Qx3UzjRIuhAw7bxL9P9iD4KNQIn6tk3Paq66KZ/M+HlV7z1jL99khIqMRdLiQemHA/cFqi2B1n7BaWB2wb2aZQ==}
     dev: false
 
   /@types/node/16.18.14:

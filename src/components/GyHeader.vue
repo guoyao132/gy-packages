@@ -1,7 +1,7 @@
 <template>
   <div class="Header">
     <div class="logo">
-      <span style="margin-left: 10px"> Gy UI</span>
+      <span style="margin-left: 10px"> Gy packages </span>
     </div>
     <div class="menu">
       <div class="menu-item">
@@ -11,7 +11,7 @@
 <!--        <router-link to="/gymap">地图</router-link>-->
 <!--      </div>-->
       <div class="menu-item">
-        <router-link to="/gy-sjmap">思极地图</router-link>
+        <a href="#/gy-sjmap" :class="{'router-link-active': routeName === 'gy-sjmap'}">思极地图</a>
       </div>
 <!--      <div class="menu-item">-->
 <!--        <router-link to="/gyModel">3D模型</router-link>-->
@@ -20,6 +20,11 @@
   </div>
 </template>
 <script setup lang="ts">
+import {useRoute} from 'vue-router'
+import {computed} from 'vue'
+const route = useRoute();
+console.log(route);
+const routeName = computed(() => route.name)
 </script>
 
 <style lang="less" scoped>

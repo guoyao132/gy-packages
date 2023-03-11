@@ -42,6 +42,7 @@ export default defineConfig(({mode}: ConfigEnv) => {
       }
     },
     build:{
+      outDir: 'npm-main',
       minify: 'terser',
       chunkSizeWarningLimit: 2000,
       // terserOptions: {

@@ -2,7 +2,7 @@
   <div class="ChildrenCon">
     <micro-app
       name='gy-sjmap'
-      :url='`${VITE_SJMAP_URL}`'
+      :url='VITE_SJMAP_URL'
       inline
       disablesandbox
       @created='handleCreate'
@@ -16,7 +16,14 @@
 </template>
 
 <script setup lang="ts">
-const VITE_SJMAP_URL = import.meta.env.VITE_SJMAP_URL
+let VITE_SJMAP_URL_L = import.meta.env.VITE_SJMAP_URL;
+if(import.meta.env.MODE !== 'development'){
+  VITE_SJMAP_URL_L = location.origin + VITE_SJMAP_URL_L;
+}
+if(window.childConfig && window.childConfig['gy-sjmap']){
+  VITE_SJMAP_URL_L = window.childConfig['gy-sjmap'];
+}
+const VITE_SJMAP_URL = VITE_SJMAP_URL_L;
 const handleCreate = (): void => {
   console.log('child-vite 创建了')
 }
