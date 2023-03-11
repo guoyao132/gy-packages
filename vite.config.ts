@@ -81,6 +81,7 @@ export default defineConfig(({mode}: ConfigEnv) => {
       }
     },
     build:{
+      outDir: 'gy-sjmap',
       lib: {
         name: 'gy-sjmap',
         entry: 'src/main.ts',

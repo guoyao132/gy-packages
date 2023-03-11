@@ -10,8 +10,6 @@
 </template>
 <script setup lang="ts">
 import Siderbar from './Siderbar.vue';
-
-console.log(Siderbar);
 import {ref, watch} from 'vue';
 import type {PropType} from 'vue'
 import {useRoute} from 'vue-router';

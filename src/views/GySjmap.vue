@@ -3,8 +3,6 @@
 </template>
 <script setup lang="ts">
 import GyPage from '@/components/GyPage.vue'
-
-console.log(GyPage);
 import {ref} from 'vue';
 import type {Ref} from 'vue';
 
