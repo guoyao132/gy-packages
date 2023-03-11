@@ -16,13 +16,6 @@ app.use(gySjmap);
 app.use(gyUi);
 app.mount('#gy-sjmap');
 
-function unmount() {
-  app?.unmount();
-  // 卸载所有数据监听函数
-  window.eventCenterForAppNameVite?.clearDataListener()
-  app = null
-}
-
 window.addEventListener('unmount-gy-sjmap', () => {
   if (app) {
     app?.unmount();
