@@ -18,7 +18,6 @@ const clickFun  = () => {
 }
 const textCon = ref(null)
 onMounted(() => {
-  console.log(textCon);
 })
 
 import {gySjMap} from "gy-sjmap";
@@ -30,7 +29,6 @@ watch(mapFinish, n => {
   //n === true
   //map filish
   const mapObj = gySjmapObj.value;
-  console.log(mapObj);
   mapObj.map.setZoom(18)
 })
 //或者使用computed获取

@@ -89,12 +89,12 @@ export default defineConfig(({mode}: ConfigEnv) => {
       },
       // minify: 'terser',
       // chunkSizeWarningLimit: 2000,
-      // terserOptions: {
-      //   compress: {
-      //     drop_console: true,
-      //     drop_debugger: true,
-      //   },
-      // },
+      terserOptions: {
+        compress: {
+          drop_console: true,
+          drop_debugger: true,
+        },
+      },
     },
     optimizeDeps: {
       exclude: ['vue-demi']

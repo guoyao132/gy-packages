@@ -39,13 +39,10 @@ export default defineComponent({
 
     watch(
         () => props.keywords, n => {
-          console.log(n);
           search()
         })
 
     const search = () => {
-      console.log(mapObj);
-
       SGMap.plugin("SGMap.PlaceSearchPlusTask").then(function (res) {
         _placeSearchPlusTask = new SGMap.PlaceSearchPlusTask({
           type: "", //搜索类型，暂时不需要
@@ -59,12 +56,9 @@ export default defineComponent({
         _placeSearchPlusTask.search({
           keywords: props.keywords
         }).then(res => {
-          console.log('success');
-          console.log(res);
           emit('getData', res);
 
         }).catch(e => {
-          console.log('error');
           emit('getData', e);
 
         });
