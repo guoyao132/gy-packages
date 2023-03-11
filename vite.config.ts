@@ -34,7 +34,7 @@ export default defineConfig(({mode}: ConfigEnv) => {
         },
       }
     },
-    base: `${process.env.NODE_ENV === 'production' ? 'http://172.18.8.146' : ''}/gy-sjmap/`,
+    base: `${process.env.NODE_ENV === 'production' ? '' : ''}/gy-sjmap/`,
     plugins: [
       vue(),
       AutoImport({
