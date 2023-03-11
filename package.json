@@ -7,18 +7,10 @@
     "build": "pnpm switch:3 && vite build",
     "switch:2": "npx vue-demi-switch 2",
     "switch:3": "npx vue-demi-switch 3",
-    "map3": "pnpm switch:3 && vue-tsc --noEmit && vite build --config vite.config3.ts",
-    "map2": "pnpm switch:2 && vue-tsc --noEmit && cd v2 && vite build --config vite.config2.ts",
-    "map": "pnpm map2 && pnpm map3",
-    "push": "pnpm map && cd pakMap && npm publish",
     "sjmap3": "pnpm switch:3 && vue-tsc --noEmit && vite build --config vite.config3.ts --mode sjmap",
     "sjmap2": "pnpm switch:2 && vue-tsc --noEmit && cd v2 && vite build --config vite.config2.ts  --mode sjmap",
     "sjmap": "pnpm sjmap2 && pnpm sjmap3",
-    "push:sjmap": "pnpm sjmap && cd pakSjMap && npm publish",
-    "model3": "pnpm switch:3 && vue-tsc --noEmit && vite build --config vite.config3.ts --mode model",
-    "model2": "pnpm switch:2 && vue-tsc --noEmit && cd v2 && vite build --config vite.config2.ts  --mode model",
-    "model": "pnpm model2 && pnpm model3",
-    "push:model": "pnpm model && cd pakModel && npm publish"
+    "push": "pnpm sjmap && cd pakSjMap && npm publish"
   },
   "dependencies": {
     "vue-demi": "^0.13.11"

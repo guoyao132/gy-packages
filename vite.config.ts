@@ -24,14 +24,6 @@ export default defineConfig(({mode}: ConfigEnv) => {
         "Access-Control-Allow-Origin": "*",
       },
       proxy: {
-        '/ccmodel': {
-          target: 'http://172.18.8.146',
-          changeOrigin: true
-        },
-        '/gyModel': {
-          target: 'http://172.18.8.146',
-          changeOrigin: true
-        },
       }
     },
     base: `${process.env.NODE_ENV === 'production' ? '' : ''}/gy-sjmap/`,
